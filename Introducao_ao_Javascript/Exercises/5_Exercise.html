@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Quinto Exercício</title>
+    </head>
+    <body>
+
+
+        <script>
+        var usuarios = [
+            {nome: "Diego", habilidade: ["JavaScript","ReactJS", "Redux"]},
+            {nome: "Gabriel", habilidade: ["VueJS", "Ruby on Rails", "Elixir"]}
+        ];
+
+        function exibiHabilidades(users){
+            for (let i = 0; i < users.length; i++) {
+                var nome = users[i].nome;
+                var habilidades = "";
+
+                for (let j = 0; j < users[i].habilidade.length; j++) {
+                    habilidades += "" + users[i].habilidade[j] + ", ";
+                }
+                
+                console.log("O " + nome + " possui as habilidades: " + habilidades)
+            }
+        }
+
+        exibiHabilidades(usuarios);
+        </script>
+    </body>
+</html>
