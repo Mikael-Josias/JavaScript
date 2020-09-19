@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Terceiro Exercício</title>
+    </head>
+    <body>
+
+
+        <script>
+            function temSkill(skills){
+                var tem = false;
+
+                for (let i = 0; i < skills.length; i++) {
+                    if (skills[i] == "JavaScript") {
+                        tem = true
+                    }
+                    
+                }
+
+                console.log(tem);
+            }
+
+            var skills = ["JavaScript", "ReactJS", "React Native"];
+
+            temSkill(skills);
+        </script>
+    </body>
+</html>
