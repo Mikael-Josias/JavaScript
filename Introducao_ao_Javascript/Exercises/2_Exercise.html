@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Segundo Exercício</title>
+    </head>
+    <body>
+
+
+        <script>
+            function pares(x, y){
+                if(x > y){
+                    var z = x;
+                    x = y;
+                    y = z;
+                }
+
+                if( x % 2 == 1){
+                    x = x + 1;
+                }
+                if(y % 2 == 1){
+                    y = y - 1;
+                }
+
+                console.log(x, y);
+
+                while( x <= y){
+                    console.log(x);
+                    x += 2;
+                }
+            }
+
+            pares(31, 321);
+
+        </script>
+    </body>
+</html>
