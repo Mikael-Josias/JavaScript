@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Primeiro Exercício</title>
+    </head>
+    <body>
+        <div id="app">
+            <input id="nome"/>
+        </div>
+        <script>
+            var linkElement = document.createElement('a');
+
+            linkElement.setAttribute('href', '#');
+            linkElement.setAttribute('title', 'Site');
+
+
+            var textElement = document.createTextNode("Acessar Site");
+            linkElement.appendChild(textElement);
+
+            var containerElement = document.getElementById('app');
+
+            containerElement.appendChild(linkElement);
+
+            var inputElement = document.querySelector('dic#app input');
+            containerElement.removeChild(inputElement);
+        </script>
+    </body>
+</html>
