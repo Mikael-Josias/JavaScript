@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Primeiro Exercício</title>
+    </head>
+    <body>
+        <button onclick="createBox()">Criar Elemento</button>
+        <div id="app">
+        </div>
+        <script>
+            var containerBox = document.getElementById("app");
+
+            function createBox(){
+                var square = document.createElement("div");
+                square.style.width = "100px";
+                square.style.height = "100px";
+                square.style.backgroundColor = "#F00";
+                square.style.margin = "2px";
+
+                containerBox.appendChild(square); 
+            }
+        </script>
+    </body>
+</html>
