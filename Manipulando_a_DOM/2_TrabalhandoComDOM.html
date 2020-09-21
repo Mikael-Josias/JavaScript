@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Primeiro Exercício</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="nome" id="nome"/>
+            <button class="botao"></button>
+        </div>
+        <script>
+           var inputElement = document.getElementById('nome');
+           var inputElement2 = document.getElementsByTagName('input')[0];
+           var inputElement3 = document.getElementsByName('nome');
+           var buttonElement = document.getElementsByClassName('botao')[0];
+
+           var inputElement4 = document.querySelector('body div#app input');
+           var inputElement5 = document.querySelector('input[name=nome]');
+
+           var buttonElement2 = document.querySelector('button.botao');
+
+           buttonElement2.onclick = function(){
+               alert('Botão clicado');
+
+               var text = inputElement.value;
+
+               alert(text);
+           }
+        </script>
+    </body>
+</html>
