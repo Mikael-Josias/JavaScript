@@ -17,8 +17,23 @@
                 square.style.height = "100px";
                 square.style.backgroundColor = "#F00";
                 square.style.margin = "2px";
+                
+                square.onmouseover = function() {
+                    square.style.backgroundColor = getRandomColor();
+                }
 
                 containerBox.appendChild(square); 
+            }
+
+            function getRandomColor(){
+                var letters = "0123456789ABCDEF";
+                var color = "#";
+                for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random()) * 16];
+                    
+                }
+
+                return color;
             }
         </script>
     </body>
