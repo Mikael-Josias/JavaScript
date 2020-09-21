@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Primeiro Exercício</title>
+    </head>
+    <body>
+        <div id="app">
+        </div>
+        <script>
+            var nomes = ["Diego", "Gabriel", "Lucas"];
+
+            var containerList = document.querySelector('div#app');
+
+            var uList = document.createElement('ul');
+            for (let i = 0; i < nomes.length; i++) {
+                var itemList = document.createElement('li');
+                var textNode = document.createTextNode(nomes[i]);
+                itemList.appendChild(textNode);
+
+                uList.appendChild(itemList);
+            }
+
+            containerList.appendChild(uList);
+
+        </script>
+    </body>
+</html>
