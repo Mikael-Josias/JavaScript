@@ -1,3 +1,4 @@
+
 var xhr = new XMLHttpRequest();
 
 xhr.open('get', 'https://api.github.com/users/Mikael-Josias');
